@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agriculture and Food Security | SCS Space</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <svg width="32" height="32" viewBox="0 0 34 34" fill="none">
+      <circle cx="17" cy="17" r="15.5" stroke="#52b052" stroke-width="1.2"/>
+      <circle cx="17" cy="17" r="3" fill="#52b052"/>
+      <line x1="1.5" y1="17" x2="32.5" y2="17" stroke="#52b052" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+      <ellipse cx="17" cy="17" rx="15.5" ry="7" stroke="#52b052" stroke-width="0.6" stroke-dasharray="2 2"/>
+      <rect x="7" y="5" width="4" height="7" rx="1" fill="#52b052" opacity="0.8"/>
+      <rect x="23" y="5" width="4" height="7" rx="1" fill="#52b052" opacity="0.8"/>
+      <line x1="7" y1="8.5" x2="27" y2="8.5" stroke="#52b052" stroke-width="1.2"/>
+      <rect x="14.5" y="5.5" width="5" height="6" rx="1" fill="#52b052"/>
+    </svg>
+    <span class="nav-logo-text">SCS <span>Space</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="agriculture.html" class="active">Agriculture</a></li>
+    <li><a href="#">Datasets</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#" class="nav-cta">Request Briefing</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="index.html">Home</a>
+  <a href="agriculture.html">Agriculture</a>
+  <a href="#">Datasets</a>
+  <a href="#">About</a>
+  <a href="#">Request Briefing</a>
+</div>
+
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-glow"></div>
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 2l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Agriculture and Food Security</span>
+    </div>
+    <div class="page-hero-tag">Intelligence Module 1 of 6</div>
+    <h1 class="page-hero-title">Agriculture and <span>Food Security</span></h1>
+    <p class="page-hero-desc">Satellite-derived insights into crop health, rainfall patterns, soil moisture, and vegetation cycles across South Africa and the African continent. Powered by Digital Earth Africa and open satellite data.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><span class="hero-meta-dot" style="background:var(--g400)"></span><strong>Focus Area:</strong> Western Cape, South Africa</div>
+      <div class="hero-meta-item"><span class="hero-meta-dot" style="background:var(--y300)"></span><strong>Case Study:</strong> Bar Tin Tin, Nigeria</div>
+      <div class="hero-meta-item"><span class="hero-meta-dot" style="background:var(--o300)"></span><strong>Source:</strong> DEA202 Course</div>
+      <div class="hero-meta-item"><span class="hero-meta-dot" style="background:var(--tm)"></span><strong>Sessions:</strong> 5</div>
+    </div>
+    <div class="session-nav">
+      <a href="#session1" class="session-pill active"><span class="session-pill-num">S1</span><span>Rainfall Anomalies</span></a>
+      <a href="#session2" class="session-pill"><span class="session-pill-num">S2</span><span>Vegetation Anomalies</span></a>
+      <a href="#session3" class="session-pill"><span class="session-pill-num">S3</span><span>Soil Moisture</span></a>
+      <a href="#session4" class="session-pill"><span class="session-pill-num">S4</span><span>Phenology</span></a>
+      <a href="#session5" class="session-pill"><span class="session-pill-num">S5</span><span>Case Study</span></a>
+    </div>
+  </div>
+</div>
+
+
+<!-- BODY -->
+<div class="page-body">
+  <div class="two-col">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-title">Sessions</div>
+      <div class="sidebar-links">
+        <a href="#session1" class="sidebar-link active"><span class="sidebar-link-num">01</span>Rainfall Anomalies</a>
+        <a href="#session2" class="sidebar-link"><span class="sidebar-link-num">02</span>Vegetation Anomalies</a>
+        <a href="#session3" class="sidebar-link"><span class="sidebar-link-num">03</span>Soil Moisture</a>
+        <a href="#session4" class="sidebar-link"><span class="sidebar-link-num">04</span>Vegetation Phenology</a>
+        <a href="#session5" class="sidebar-link"><span class="sidebar-link-num">05</span>Case Study</a>
+      </div>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-source">
+        <strong>Data Sources</strong>
+        CHIRPS Rainfall<br>
+        Sentinel-2 (ESA)<br>
+        Landsat 8 and 9<br>
+        DEA Crop Mask<br>
+        SMAP Soil Moisture<br>
+        ERA5 (Copernicus)<br>
+        DEA NDVI Climatology
+      </div>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-source">
+        <strong>Primary Focus</strong>
+        Western Cape, South Africa<br>
+        Stellenbosch and Breede River Valley
+      </div>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-source">
+        <strong>Case Study Location</strong>
+        Bar Tin Tin, Plateau State<br>
+        Nigeria (DEA202)
+      </div>
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+
+      <!-- ═══ SESSION 1 ═══ -->
+      <div class="session-block fade-in" id="session1">
+        <div class="session-header">
+          <span class="session-number">SESSION 01</span>
+          <div class="session-header-text">
+            <span class="session-tag tag-blue">CHIRPS Satellite Data</span>
+            <h2 class="session-title">Rainfall Anomalies</h2>
+            <div class="session-subtitle">CHIRPS Monthly Rainfall · Digital Earth Africa Sandbox</div>
+          </div>
+        </div>
+
+        <p class="session-intro">The Western Cape is one of South Africa's most important agricultural regions, home to wine estates in Stellenbosch, fruit farms in the Hex River Valley, and wheat fields across the Swartland. All of it depends on rainfall. This session uses satellite-derived rainfall data to measure how much rain actually fell compared to the long-term average, and where across the landscape those differences were most severe.</p>
+
+        <div class="measure-grid">
+          <div class="measure-card">
+            <div class="measure-card-label">Data Source</div>
+            <div class="measure-card-value">CHIRPS</div>
+            <div class="measure-card-note">Climate Hazards Group InfraRed Precipitation with Station data</div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-card-label">Spatial Resolution</div>
+            <div class="measure-card-value">5 km</div>
+            <div class="measure-card-note">Per pixel rainfall estimate across the landscape</div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-card-label">What is measured</div>
+            <div class="measure-card-value">mm deviation</div>
+            <div class="measure-card-note">Difference from the long-term monthly mean rainfall</div>
+          </div>
+        </div>
+
+        <!-- DIAGRAM: Rainfall anomaly flow -->
+        <div class="diagram-wrap">
+          <div class="diagram-label">How rainfall anomalies are calculated</div>
+          <svg viewBox="0 0 680 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <!-- Step boxes -->
+            <!-- Step 1 -->
+            <rect x="10" y="60" width="120" height="80" rx="5" fill="#131f13" stroke="#2d6b2d" stroke-width="1"/>
+            <text x="70" y="88" text-anchor="middle" font-size="9" fill="#52b052" font-family="DM Mono,monospace" font-weight="500">STEP 1</text>
+            <text x="70" y="106" text-anchor="middle" font-size="10" fill="#eaf5ea" font-family="DM Sans,sans-serif" font-weight="500">Define Area</text>
+            <text x="70" y="120" text-anchor="middle" font-size="9" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">Western Cape</text>
+            <text x="70" y="132" text-anchor="middle" font-size="9" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">and time range</text>
+            <!-- Arrow -->
+            <path d="M132 100 L152 100" stroke="#2d6b2d" stroke-width="1.5" marker-end="url(#arr)"/>
+            <!-- Step 2 -->
+            <rect x="154" y="60" width="120" height="80" rx="5" fill="#131f13" stroke="#2d6b2d" stroke-width="1"/>
+            <text x="214" y="88" text-anchor="middle" font-size="9" fill="#52b052" font-family="DM Mono,monospace" font-weight="500">STEP 2</text>
+            <text x="214" y="106" text-anchor="middle" font-size="10" fill="#eaf5ea" font-family="DM Sans,sans-serif" font-weight="500">Load CHIRPS</text>
+            <text x="214" y="120" text-anchor="middle" font-size="9" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">Monthly rainfall</text>
+            <text x="214" y="132" text-anchor="middle" font-size="9" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">from DEA Sandbox</text>
+            <!-- Arrow -->
+            <path d="M276 100 L296 100" stroke="#2d6b2d" stroke-width="1.5" marker-end="url(#arr)"/>
+            <!-- Step 3 -->
+            <rect x="298" y="60" width="120" height="80" rx="5" fill="#131f13" stroke="#f5cc47" stroke-width="1"/>
+            <text x="358" y="88" text-anchor="middle" font-size="9" fill="#f5cc47" font-family="DM Mono,monospace" font-weight="500">STEP 3</text>
+            <text x="358" y="106" text-anchor="middle" font-size="10" fill="#eaf5ea" font-family="DM Sans,sans-serif" font-weight="500">Calculate</text>
+            <text x="358" y="120" text-anchor="middle" font-size="9" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">Subtract long-term</text>
+            <text x="358" y="132" text-anchor="middle" font-size="9" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">mean, divide by SD</text>
+            <!-- Arrow -->
+            <path d="M420 100 L440 100" stroke="#2d6b2d" stroke-width="1.5" marker-end="url(#arr)"/>
+            <!-- Step 4 -->
+            <rect x="442" y="60" width="120" height="80" rx="5" fill="#131f13" stroke="#52b052" stroke-width="1.5"/>
+            <text x="502" y="88" text-anchor="middle" font-size="9" fill="#52b052" font-family="DM Mono,monospace" font-weight="500">OUTPUT</text>
+            <text x="502" y="106" text-anchor="middle" font-size="10" fill="#eaf5ea" font-family="DM Sans,sans-serif" font-weight="500">Anomaly Map</text>
+            <text x="502" y="120" text-anchor="middle" font-size="9" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">Zonal averages</text>
+            <text x="502" y="132" text-anchor="middle" font-size="9" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">and per-pixel maps</text>
+            <!-- Formula box -->
+            <rect x="580" y="70" width="90" height="60" rx="5" fill="rgba(245,204,71,0.06)" stroke="rgba(245,204,71,0.3)" stroke-width="1"/>
+            <text x="625" y="94" text-anchor="middle" font-size="9" fill="#f5cc47" font-family="DM Mono,monospace">Formula</text>
+            <text x="625" y="108" text-anchor="middle" font-size="9" fill="rgba(234,245,234,0.6)" font-family="DM Mono,monospace">(X - mean)</text>
+            <text x="625" y="120" text-anchor="middle" font-size="9" fill="rgba(234,245,234,0.6)" font-family="DM Mono,monospace">———————</text>
+            <text x="625" y="132" text-anchor="middle" font-size="9" fill="rgba(234,245,234,0.6)" font-family="DM Mono,monospace">std dev</text>
+            <defs>
+              <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#2d6b2d"/>
+              </marker>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="steps-list">
+          <div class="step-item"><span class="step-num">01</span><span class="step-text"><strong>Define the study area and time period.</strong> For the Western Cape, this means selecting a bounding box that captures the major farming zones around Stellenbosch, Paarl, and the Breede River Valley, then choosing a season of interest such as the winter rainfall window from May to September.</span></div>
+          <div class="step-item"><span class="step-num">02</span><span class="step-text"><strong>Load CHIRPS monthly rainfall data.</strong> CHIRPS blends satellite infrared data with ground station records to estimate how much rain fell each month at a 5km resolution. It is available through the Digital Earth Africa Sandbox for the entire African continent going back to 1981.</span></div>
+          <div class="step-item"><span class="step-num">03</span><span class="step-text"><strong>Calculate raw anomalies and standardised anomalies.</strong> A raw anomaly is simply this month's rainfall minus the long-term average for that month. A standardised anomaly goes further, dividing that difference by the standard deviation, which removes seasonal variability and makes dry years in different seasons directly comparable.</span></div>
+          <div class="step-item"><span class="step-num">04</span><span class="step-text"><strong>Visualise zonal averages and per-pixel maps.</strong> A zonal average gives a single number for the whole region. A per-pixel map shows exactly where within the Western Cape the deficit or surplus was concentrated, which is critical for targeted farm-level decisions.</span></div>
+        </div>
+
+        <div class="source-chips">
+          <span class="chip">CHIRPS v2.0</span><span class="chip">DEA Sandbox</span><span class="chip">xarray</span><span class="chip">Standardised Anomaly</span>
+        </div>
+
+        <div class="takeaway">
+          <span class="takeaway-icon">🌧️</span>
+          <div class="takeaway-body">
+            <div class="takeaway-title">Key Takeaway</div>
+            <div class="takeaway-text">A single rainfall total tells you how much rain fell. A standardised anomaly tells you how unusual that amount was. For a wine farmer in Stellenbosch, knowing that this season was 1.8 standard deviations below normal is far more actionable than knowing it received 180mm instead of 240mm.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══ SESSION 2 ═══ -->
+      <div class="session-block fade-in" id="session2">
+        <div class="session-header">
+          <span class="session-number">SESSION 02</span>
+          <div class="session-header-text">
+            <span class="session-tag tag-green">Sentinel-2 and Landsat</span>
+            <h2 class="session-title">Vegetation Anomalies</h2>
+            <div class="session-subtitle">NDVI · DEA Crop Mask · 30m NDVI Climatology</div>
+          </div>
+        </div>
+
+        <p class="session-intro">NDVI — the Normalised Difference Vegetation Index — is the most widely used satellite measure of plant health. It compares how much red light plants absorb versus how much near-infrared light they reflect. Healthy, dense vegetation absorbs red and reflects infrared strongly. Stressed or sparse vegetation does the opposite. For the fruit and wine farms of the Western Cape, tracking NDVI anomalies through the growing season reveals where crops are underperforming relative to historical baselines.</p>
+
+        <div class="measure-grid">
+          <div class="measure-card">
+            <div class="measure-card-label">Primary Sensor</div>
+            <div class="measure-card-value">Sentinel-2</div>
+            <div class="measure-card-note">10m resolution, revisit every 5 days</div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-card-label">Backup Sensor</div>
+            <div class="measure-card-value">Landsat 8/9</div>
+            <div class="measure-card-note">30m resolution, used to extend the time series</div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-card-label">NDVI Formula</div>
+            <div class="measure-card-value">NIR minus Red</div>
+            <div class="measure-card-note">Divided by NIR plus Red. Range from -1 to +1</div>
+          </div>
+        </div>
+
+        <!-- DIAGRAM: NDVI derivation -->
+        <div class="diagram-wrap">
+          <div class="diagram-label">From satellite bands to vegetation anomaly</div>
+          <svg viewBox="0 0 680 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sentinel-2 satellite icon -->
+            <rect x="10" y="30" width="90" height="50" rx="4" fill="#131f13" stroke="#185fa5" stroke-width="1"/>
+            <line x1="10" y1="55" x2="0" y2="55" stroke="#185fa5" stroke-width="1.5"/>
+            <line x1="100" y1="55" x2="110" y2="55" stroke="#185fa5" stroke-width="1.5"/>
+            <rect x="0" y="48" width="10" height="14" rx="1" fill="#185fa5" opacity="0.8"/>
+            <rect x="100" y="48" width="10" height="14" rx="1" fill="#185fa5" opacity="0.8"/>
+            <text x="55" y="52" text-anchor="middle" font-size="9" fill="#7ab8f5" font-family="DM Mono,monospace">Sentinel-2</text>
+            <text x="55" y="68" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">Band 4 (Red)</text>
+            <text x="55" y="80" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">Band 8 (NIR)</text>
+            <!-- Arrow down to cloud mask -->
+            <path d="M55 82 L55 102" stroke="#2d6b2d" stroke-width="1.2" stroke-dasharray="3 2"/>
+            <!-- Cloud mask box -->
+            <rect x="10" y="104" width="90" height="36" rx="4" fill="#131f13" stroke="#2d6b2d" stroke-width="1"/>
+            <text x="55" y="121" text-anchor="middle" font-size="9" fill="#52b052" font-family="DM Sans,sans-serif" font-weight="500">Cloud Masked</text>
+            <text x="55" y="133" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">Surface Reflectance</text>
+            <!-- Arrow right -->
+            <path d="M102 122 L126 122" stroke="#2d6b2d" stroke-width="1.5" marker-end="url(#arr2)"/>
+            <!-- NDVI calc -->
+            <rect x="128" y="100" width="110" height="44" rx="4" fill="rgba(245,204,71,0.06)" stroke="rgba(245,204,71,0.3)" stroke-width="1"/>
+            <text x="183" y="118" text-anchor="middle" font-size="9" fill="#f5cc47" font-family="DM Mono,monospace">NDVI</text>
+            <text x="183" y="130" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.55)" font-family="DM Mono,monospace">(NIR - Red)</text>
+            <text x="183" y="140" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.55)" font-family="DM Mono,monospace">(NIR + Red)</text>
+            <!-- Arrow right -->
+            <path d="M240 122 L264 122" stroke="#2d6b2d" stroke-width="1.5" marker-end="url(#arr2)"/>
+            <!-- Time series -->
+            <rect x="266" y="80" width="110" height="86" rx="4" fill="#131f13" stroke="#2d6b2d" stroke-width="1"/>
+            <text x="321" y="100" text-anchor="middle" font-size="9" fill="#52b052" font-family="DM Mono,monospace" font-weight="500">Time Series</text>
+            <!-- Mini sparkline -->
+            <polyline points="276,148 286,140 296,145 306,132 316,128 326,122 336,126 346,115 356,118 366,114" fill="none" stroke="#52b052" stroke-width="1.5" opacity="0.8"/>
+            <text x="321" y="166" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">Smoothed and gap-filled</text>
+            <!-- Arrow right -->
+            <path d="M378 122 L402 122" stroke="#2d6b2d" stroke-width="1.5" marker-end="url(#arr2)"/>
+            <!-- DEA baseline -->
+            <rect x="404" y="80" width="110" height="44" rx="4" fill="#131f13" stroke="#f07c1a" stroke-width="1"/>
+            <text x="459" y="100" text-anchor="middle" font-size="9" fill="#f59c4a" font-family="DM Mono,monospace" font-weight="500">DEA Baseline</text>
+            <text x="459" y="112" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">30m NDVI</text>
+            <text x="459" y="122" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">Climatology</text>
+            <!-- Arrow down and right -->
+            <path d="M459 126 L459 148 L542 148 L542 130" stroke="#2d6b2d" stroke-width="1.2" stroke-dasharray="3 2" marker-end="url(#arr2)"/>
+            <!-- Anomaly output -->
+            <rect x="490" y="80" width="110" height="44" rx="4" fill="#131f13" stroke="#52b052" stroke-width="1.5"/>
+            <text x="545" y="98" text-anchor="middle" font-size="9" fill="#52b052" font-family="DM Mono,monospace" font-weight="500">NDVI ANOMALY</text>
+            <text x="545" y="110" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">Standardised</text>
+            <text x="545" y="120" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">deviation from norm</text>
+            <!-- Crop mask note -->
+            <rect x="128" y="155" width="110" height="36" rx="4" fill="rgba(82,176,82,0.06)" stroke="rgba(82,176,82,0.2)" stroke-width="1"/>
+            <text x="183" y="170" text-anchor="middle" font-size="9" fill="#7acc7a" font-family="DM Sans,sans-serif" font-weight="500">DEA Crop Mask</text>
+            <text x="183" y="182" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">Agricultural pixels only</text>
+            <path d="M183 155 L183 144" stroke="rgba(82,176,82,0.4)" stroke-width="1" stroke-dasharray="2 2"/>
+            <defs>
+              <marker id="arr2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#2d6b2d"/>
+              </marker>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="steps-list">
+          <div class="step-item"><span class="step-num">01</span><span class="step-text"><strong>Cloud masking removes noise.</strong> Clouds are the biggest obstacle in optical satellite data. The DEA pipeline applies a quality mask to each image, keeping only pixels with clear sky conditions. This is essential for the Western Cape's winter cloud cover periods.</span></div>
+          <div class="step-item"><span class="step-num">02</span><span class="step-text"><strong>The DEA Crop Mask isolates farmland.</strong> Not every pixel in the Western Cape is a farm. The Digital Earth Africa crop mask filters the analysis to agricultural land only, ensuring that vineyards, orchards, and grain fields are measured without interference from fynbos or built-up areas.</span></div>
+          <div class="step-item"><span class="step-num">03</span><span class="step-text"><strong>A continuous time series is built by gap-filling.</strong> Cloud gaps and missing observations leave holes in the data. Smoothing and interpolation techniques fill those holes to create a clean, continuous NDVI signal through the growing season.</span></div>
+          <div class="step-item"><span class="step-num">04</span><span class="step-text"><strong>Standardised anomalies reveal true stress.</strong> Comparing current NDVI to the DEA 30m climatology baseline shows whether vegetation is greener or more stressed than it normally is at this time of year, which is the direct measure of crop health deviation.</span></div>
+        </div>
+
+        <div class="source-chips">
+          <span class="chip">Sentinel-2 L2A</span><span class="chip">Landsat 8/9 SR</span><span class="chip">DEA Crop Mask</span><span class="chip">DEA NDVI Climatology</span><span class="chip">NDVI Anomaly</span>
+        </div>
+
+        <div class="takeaway">
+          <span class="takeaway-icon">🌿</span>
+          <div class="takeaway-body">
+            <div class="takeaway-title">Key Takeaway</div>
+            <div class="takeaway-text">NDVI anomalies do not just show where vegetation is sparse. They show where vegetation is underperforming relative to what it should be doing at this point in the season. A vineyard in Stellenbosch showing a negative NDVI anomaly in February is a flag worth investigating before harvest.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══ SESSION 3 ═══ -->
+      <div class="session-block fade-in" id="session3">
+        <div class="session-header">
+          <span class="session-number">SESSION 03</span>
+          <div class="session-header-text">
+            <span class="session-tag tag-orange">SMAP and ERA5</span>
+            <h2 class="session-title">Soil Moisture</h2>
+            <div class="session-subtitle">NCI THREDDS OPeNDAP · ERA5 Precipitation · Surface and Root Zone</div>
+          </div>
+        </div>
+
+        <p class="session-intro">Rainfall tells you what fell from the sky. Soil moisture tells you what actually reached the roots. The two are related but not the same. Water can run off hard soils, evaporate before infiltrating, or be locked in the upper centimetres while the root zone stays dry. For South African farmers managing irrigation across the Hex River Valley or monitoring dryland wheat in the Swartland, soil moisture data gives a ground-truth view of what the plant is actually experiencing.</p>
+
+        <div class="measure-grid">
+          <div class="measure-card">
+            <div class="measure-card-label">Surface Moisture</div>
+            <div class="measure-card-value">Top 5 cm</div>
+            <div class="measure-card-note">Immediate response to rainfall, evaporation, and irrigation</div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-card-label">Root Zone Moisture</div>
+            <div class="measure-card-value">0 to 100 cm</div>
+            <div class="measure-card-note">What plant roots actually access for growth</div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-card-label">Compared Against</div>
+            <div class="measure-card-value">ERA5</div>
+            <div class="measure-card-note">Copernicus climate reanalysis for precipitation context</div>
+          </div>
+        </div>
+
+        <!-- DIAGRAM: Soil moisture layers -->
+        <div class="diagram-wrap">
+          <div class="diagram-label">Soil moisture layers and data sources</div>
+          <svg viewBox="0 0 680 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <!-- Soil profile cross-section -->
+            <rect x="10" y="20" width="160" height="160" rx="4" fill="#131f13" stroke="#2d6b2d" stroke-width="1"/>
+            <!-- Layers -->
+            <rect x="10" y="20" width="160" height="30" rx="4" fill="rgba(82,176,82,0.15)" stroke="none"/>
+            <text x="90" y="39" text-anchor="middle" font-size="9" fill="#7acc7a" font-family="DM Sans,sans-serif" font-weight="500">Surface (0 to 5cm)</text>
+            <rect x="10" y="50" width="160" height="60" rx="0" fill="rgba(232,184,37,0.08)" stroke="none"/>
+            <text x="90" y="78" text-anchor="middle" font-size="9" fill="#f9e08a" font-family="DM Sans,sans-serif" font-weight="500">Root Zone (5 to 100cm)</text>
+            <rect x="10" y="110" width="160" height="70" rx="0" fill="rgba(24,95,165,0.1)" stroke="none"/>
+            <text x="90" y="150" text-anchor="middle" font-size="9" fill="#7ab8f5" font-family="DM Sans,sans-serif" font-weight="500">Deep (100cm plus)</text>
+            <!-- Layer lines -->
+            <line x1="10" y1="50" x2="170" y2="50" stroke="#2d6b2d" stroke-width="0.5" stroke-dasharray="2 2"/>
+            <line x1="10" y1="110" x2="170" y2="110" stroke="#2d6b2d" stroke-width="0.5" stroke-dasharray="2 2"/>
+            <!-- Moisture dots in surface -->
+            <circle cx="40" cy="35" r="2.5" fill="#52b052" opacity="0.7"/>
+            <circle cx="60" cy="30" r="2" fill="#52b052" opacity="0.5"/>
+            <circle cx="80" cy="38" r="3" fill="#52b052" opacity="0.8"/>
+            <circle cx="120" cy="32" r="2" fill="#52b052" opacity="0.6"/>
+            <circle cx="145" cy="37" r="2.5" fill="#52b052" opacity="0.7"/>
+            <!-- Moisture dots in root zone -->
+            <circle cx="35" cy="65" r="2" fill="#e8b825" opacity="0.5"/>
+            <circle cx="55" cy="80" r="2.5" fill="#e8b825" opacity="0.6"/>
+            <circle cx="90" cy="70" r="2" fill="#e8b825" opacity="0.5"/>
+            <circle cx="130" cy="90" r="2" fill="#e8b825" opacity="0.4"/>
+            <!-- Arrow right to SMAP box -->
+            <path d="M172 65 L200 65" stroke="#2d6b2d" stroke-width="1.5" marker-end="url(#arr3)"/>
+            <!-- SMAP box -->
+            <rect x="202" y="20" width="120" height="60" rx="4" fill="#131f13" stroke="#52b052" stroke-width="1"/>
+            <text x="262" y="42" text-anchor="middle" font-size="9" fill="#52b052" font-family="DM Mono,monospace" font-weight="500">SMAP Satellite</text>
+            <text x="262" y="56" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">NASA microwave sensor</text>
+            <text x="262" y="68" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">Measures surface wetness</text>
+            <!-- ERA5 box -->
+            <rect x="202" y="100" width="120" height="60" rx="4" fill="#131f13" stroke="#f07c1a" stroke-width="1"/>
+            <text x="262" y="122" text-anchor="middle" font-size="9" fill="#f59c4a" font-family="DM Mono,monospace" font-weight="500">ERA5 Reanalysis</text>
+            <text x="262" y="136" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">Copernicus climate model</text>
+            <text x="262" y="148" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.5)" font-family="DM Sans,sans-serif">Precipitation context</text>
+            <!-- Arrow right -->
+            <path d="M324 100 L352 100" stroke="#2d6b2d" stroke-width="1.5" marker-end="url(#arr3)"/>
+            <path d="M324 50 L352 50" stroke="#2d6b2d" stroke-width="1.5" marker-end="url(#arr3)"/>
+            <!-- Combined output -->
+            <rect x="354" y="30" width="150" height="140" rx="4" fill="#131f13" stroke="#52b052" stroke-width="1.5"/>
+            <text x="429" y="54" text-anchor="middle" font-size="9" fill="#52b052" font-family="DM Mono,monospace" font-weight="500">COMBINED VIEW</text>
+            <!-- Bar chart inside -->
+            <rect x="370" y="70" width="16" height="70" rx="2" fill="rgba(82,176,82,0.15)"/>
+            <rect x="370" y="98" width="16" height="42" rx="2" fill="#52b052" opacity="0.7"/>
+            <rect x="394" y="70" width="16" height="70" rx="2" fill="rgba(82,176,82,0.15)"/>
+            <rect x="394" y="82" width="16" height="58" rx="2" fill="#e8b825" opacity="0.7"/>
+            <rect x="418" y="70" width="16" height="70" rx="2" fill="rgba(82,176,82,0.15)"/>
+            <rect x="418" y="90" width="16" height="50" rx="2" fill="#f07c1a" opacity="0.7"/>
+            <rect x="442" y="70" width="16" height="70" rx="2" fill="rgba(82,176,82,0.15)"/>
+            <rect x="442" y="104" width="16" height="36" rx="2" fill="#e05555" opacity="0.7"/>
+            <text x="378" y="154" text-anchor="middle" font-size="7" fill="rgba(234,245,234,0.4)" font-family="DM Mono,monospace">Jan</text>
+            <text x="402" y="154" text-anchor="middle" font-size="7" fill="rgba(234,245,234,0.4)" font-family="DM Mono,monospace">Apr</text>
+            <text x="426" y="154" text-anchor="middle" font-size="7" fill="rgba(234,245,234,0.4)" font-family="DM Mono,monospace">Jul</text>
+            <text x="450" y="154" text-anchor="middle" font-size="7" fill="rgba(234,245,234,0.4)" font-family="DM Mono,monospace">Oct</text>
+            <text x="429" y="168" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">Wetness vs Rainfall</text>
+            <!-- Arrow -->
+            <path d="M506 100 L530 100" stroke="#2d6b2d" stroke-width="1.5" marker-end="url(#arr3)"/>
+            <!-- Decision box -->
+            <rect x="532" y="70" width="130" height="60" rx="4" fill="rgba(82,176,82,0.06)" stroke="rgba(82,176,82,0.3)" stroke-width="1"/>
+            <text x="597" y="91" text-anchor="middle" font-size="9" fill="#7acc7a" font-family="DM Sans,sans-serif" font-weight="500">Agricultural</text>
+            <text x="597" y="103" text-anchor="middle" font-size="9" fill="#7acc7a" font-family="DM Sans,sans-serif" font-weight="500">Decision Support</text>
+            <text x="597" y="117" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">Irrigation planning</text>
+            <text x="597" y="127" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">Drought early warning</text>
+            <defs>
+              <marker id="arr3" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#2d6b2d"/>
+              </marker>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="steps-list">
+          <div class="step-item"><span class="step-num">01</span><span class="step-text"><strong>Surface wetness from SMAP.</strong> NASA's Soil Moisture Active Passive satellite uses microwave energy to measure how wet the top few centimetres of soil are. This data is retrieved through NCI's THREDDS OPeNDAP service and covers the whole of South Africa at near daily intervals.</span></div>
+          <div class="step-item"><span class="step-num">02</span><span class="step-text"><strong>Root zone wetness reveals what plants feel.</strong> The root zone model extends the surface signal deeper into the soil profile, estimating the moisture available to crop roots. A farm can show wet surface conditions after rain while the root zone remains in deficit from weeks of prior drought.</span></div>
+          <div class="step-item"><span class="step-num">03</span><span class="step-text"><strong>ERA5 precipitation provides context.</strong> Comparing soil moisture trends against ERA5 rainfall data explains why moisture levels changed. This helps distinguish between drought, evaporation, and over-extraction scenarios, each requiring a different management response.</span></div>
+        </div>
+
+        <div class="source-chips">
+          <span class="chip">NASA SMAP</span><span class="chip">NCI THREDDS</span><span class="chip">ERA5 Copernicus</span><span class="chip">OPeNDAP</span><span class="chip">Root Zone Model</span>
+        </div>
+
+        <div class="takeaway">
+          <span class="takeaway-icon">🌱</span>
+          <div class="takeaway-body">
+            <div class="takeaway-title">Key Takeaway</div>
+            <div class="takeaway-text">Rain gauges measure what fell. Soil moisture sensors measure what stayed. For a potato farmer in Ceres or a wheat grower near Swellendam, knowing the root zone moisture status in real time is the difference between timely irrigation and a missed yield window.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══ SESSION 4 ═══ -->
+      <div class="session-block fade-in" id="session4">
+        <div class="session-header">
+          <span class="session-number">SESSION 04</span>
+          <div class="session-header-text">
+            <span class="session-tag tag-yellow">Sentinel-2 Time Series</span>
+            <h2 class="session-title">Vegetation Phenology</h2>
+            <div class="session-subtitle">xr_phenology · Bar Tin Tin, Nigeria · Seasonal Dynamics</div>
+          </div>
+        </div>
+
+        <p class="session-intro">Phenology is the study of the timing of natural cycles. For crops, it tracks when vegetation greens up, peaks, and senesces through the season. By measuring these timing signatures from satellite NDVI time series, it is possible to detect whether crops are developing on schedule, running early or late due to climate shifts, or showing signs of stress that could affect final yield. This session works with data from Bar Tin Tin in Plateau State, Nigeria, a mixed vegetable farming area where the seasonal crop cycle is clearly visible from space.</p>
+
+        <div class="measure-grid">
+          <div class="measure-card">
+            <div class="measure-card-label">Study Location</div>
+            <div class="measure-card-value">Bar Tin Tin</div>
+            <div class="measure-card-note">Plateau State, Nigeria. Cabbage, potatoes, peas, and carrots</div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-card-label">Key Metric</div>
+            <div class="measure-card-value">Phenology Stats</div>
+            <div class="measure-card-note">Start of season, peak, end of season, season length</div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-card-label">Method</div>
+            <div class="measure-card-value">xr_phenology</div>
+            <div class="measure-card-note">Digital Earth Africa function for temporal statistics</div>
+          </div>
+        </div>
+
+        <!-- DIAGRAM: Phenology curve -->
+        <div class="diagram-wrap">
+          <div class="diagram-label">The crop phenology cycle as seen from satellite NDVI</div>
+          <svg viewBox="0 0 680 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <!-- Axes -->
+            <line x1="40" y1="170" x2="640" y2="170" stroke="#2d6b2d" stroke-width="1"/>
+            <line x1="40" y1="20" x2="40" y2="170" stroke="#2d6b2d" stroke-width="1"/>
+            <!-- Y-axis labels -->
+            <text x="35" y="174" text-anchor="end" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Mono,monospace">0.0</text>
+            <text x="35" y="120" text-anchor="end" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Mono,monospace">0.4</text>
+            <text x="35" y="70" text-anchor="end" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Mono,monospace">0.8</text>
+            <!-- Grid lines -->
+            <line x1="40" y1="120" x2="640" y2="120" stroke="#1a3d1a" stroke-width="0.5" stroke-dasharray="3 3"/>
+            <line x1="40" y1="70" x2="640" y2="70" stroke="#1a3d1a" stroke-width="0.5" stroke-dasharray="3 3"/>
+            <!-- Phenology curve (smooth bell) -->
+            <path d="M 60,165 C 80,165 100,160 130,145 C 160,130 180,100 210,75 C 230,58 250,48 280,45 C 310,42 330,42 360,48 C 390,55 410,75 430,95 C 450,115 470,140 500,158 C 520,165 540,167 560,168" fill="none" stroke="#52b052" stroke-width="2.5"/>
+            <!-- Filled area under curve -->
+            <path d="M 60,165 C 80,165 100,160 130,145 C 160,130 180,100 210,75 C 230,58 250,48 280,45 C 310,42 330,42 360,48 C 390,55 410,75 430,95 C 450,115 470,140 500,158 C 520,165 540,167 560,168 L 560,170 L 60,170 Z" fill="rgba(82,176,82,0.08)"/>
+            <!-- Phenology markers -->
+            <!-- SOS -->
+            <line x1="140" y1="140" x2="140" y2="170" stroke="#52b052" stroke-width="1" stroke-dasharray="2 2"/>
+            <circle cx="140" cy="140" r="4" fill="#52b052"/>
+            <text x="140" y="185" text-anchor="middle" font-size="8" fill="#7acc7a" font-family="DM Mono,monospace">SOS</text>
+            <text x="140" y="195" text-anchor="middle" font-size="7" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">Start</text>
+            <!-- POS -->
+            <line x1="310" y1="43" x2="310" y2="170" stroke="#f5cc47" stroke-width="1" stroke-dasharray="2 2"/>
+            <circle cx="310" cy="43" r="4" fill="#f5cc47"/>
+            <text x="310" y="185" text-anchor="middle" font-size="8" fill="#f5cc47" font-family="DM Mono,monospace">POS</text>
+            <text x="310" y="195" text-anchor="middle" font-size="7" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">Peak</text>
+            <!-- EOS -->
+            <line x1="480" y1="148" x2="480" y2="170" stroke="#f07c1a" stroke-width="1" stroke-dasharray="2 2"/>
+            <circle cx="480" cy="148" r="4" fill="#f07c1a"/>
+            <text x="480" y="185" text-anchor="middle" font-size="8" fill="#f59c4a" font-family="DM Mono,monospace">EOS</text>
+            <text x="480" y="195" text-anchor="middle" font-size="7" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">End</text>
+            <!-- Season length bracket -->
+            <line x1="140" y1="15" x2="480" y2="15" stroke="rgba(234,245,234,0.2)" stroke-width="1"/>
+            <line x1="140" y1="12" x2="140" y2="18" stroke="rgba(234,245,234,0.2)" stroke-width="1"/>
+            <line x1="480" y1="12" x2="480" y2="18" stroke="rgba(234,245,234,0.2)" stroke-width="1"/>
+            <text x="310" y="12" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">Season Length</text>
+            <!-- X axis labels -->
+            <text x="100" y="184" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.35)" font-family="DM Sans,sans-serif">Jan</text>
+            <text x="200" y="184" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.35)" font-family="DM Sans,sans-serif">Mar</text>
+            <text x="310" y="184" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.35)" font-family="DM Sans,sans-serif">May</text>
+            <text x="420" y="184" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.35)" font-family="DM Sans,sans-serif">Jul</text>
+            <text x="530" y="184" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.35)" font-family="DM Sans,sans-serif">Sep</text>
+            <!-- NDVI label -->
+            <text x="20" y="100" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.35)" font-family="DM Mono,monospace" transform="rotate(-90 20 100)">NDVI</text>
+            <!-- Stress annotation -->
+            <rect x="570" y="30" width="100" height="60" rx="4" fill="rgba(224,85,85,0.08)" stroke="rgba(224,85,85,0.25)" stroke-width="1"/>
+            <text x="620" y="50" text-anchor="middle" font-size="9" fill="#ee8888" font-family="DM Sans,sans-serif" font-weight="500">Stress signal</text>
+            <text x="620" y="63" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">Early EOS or</text>
+            <text x="620" y="75" text-anchor="middle" font-size="8" fill="rgba(234,245,234,0.4)" font-family="DM Sans,sans-serif">suppressed peak</text>
+          </svg>
+        </div>
+
+        <div class="steps-list">
+          <div class="step-item"><span class="step-num">01</span><span class="step-text"><strong>The NDVI time series is smoothed and interpolated.</strong> Raw satellite observations contain noise from atmospheric effects and residual cloud contamination. Smoothing creates a clean seasonal curve that faithfully represents the crop growth trajectory.</span></div>
+          <div class="step-item"><span class="step-num">02</span><span class="step-text"><strong>Phenology statistics are extracted using xr_phenology.</strong> The DEA function identifies the start of season (SOS), peak of season (POS), end of season (EOS), and total season length from the NDVI curve. These can be derived for a whole zone or per individual pixel.</span></div>
+          <div class="step-item"><span class="step-num">03</span><span class="step-text"><strong>Per-pixel analysis reveals spatial variation.</strong> Even within a single farm, phenology timing varies. A per-pixel map shows which parts of a field green up first, where peak NDVI is lowest, and where the season ends early — all indicators of soil variation, irrigation coverage, or localised stress.</span></div>
+        </div>
+
+        <div class="source-chips">
+          <span class="chip">Sentinel-2 L2A</span><span class="chip">DEA xr_phenology</span><span class="chip">hdstats</span><span class="chip">Bar Tin Tin Nigeria</span><span class="chip">Phenology Statistics</span>
+        </div>
+
+        <div class="takeaway">
+          <span class="takeaway-icon">📅</span>
+          <div class="takeaway-body">
+            <div class="takeaway-title">Key Takeaway</div>
+            <div class="takeaway-text">A crop that peaks two weeks late or ends the season three weeks early is telling you something important. Phenology from satellite data captures these shifts across entire landscapes, giving early warning of harvest timing changes or stress events that ground surveys would miss until it is too late.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ═══ SESSION 5 ═══ -->
+      <div class="session-block fade-in" id="session5">
+        <div class="session-header">
+          <span class="session-number">SESSION 05</span>
+          <div class="session-header-text">
+            <span class="session-tag tag-red">Live Case Study</span>
+            <h2 class="session-title">Crop Health Assessment</h2>
+            <div class="session-subtitle">Bar Tin Tin, Plateau State, Nigeria · DEA202 Verified Analysis</div>
+          </div>
+        </div>
+
+        <div class="case-study-banner">
+          <div class="csb-eyebrow">DEA202 Verified Case Study</div>
+          <div class="csb-title">Bar Tin Tin, Plateau State, Nigeria</div>
+          <div class="csb-sub">A mixed vegetable farming area producing cabbage, potatoes, peas, and carrots at altitude in central Nigeria. The satellite record for this location provides a clear, well-validated example of how all four previous sessions combine into an integrated crop health intelligence picture.</div>
+          <div class="csb-meta">
+            <div class="csb-meta-item"><strong>Coordinates:</strong> Approx. 9.2°N, 9.5°E</div>
+            <div class="csb-meta-item"><strong>Elevation:</strong> 1,200 to 1,500m asl</div>
+            <div class="csb-meta-item"><strong>Primary Crops:</strong> Cabbage, potatoes, peas, carrots</div>
+            <div class="csb-meta-item"><strong>Data Source:</strong> Digital Earth Africa DEA202</div>
+          </div>
+        </div>
+
+        <p class="session-intro">This session integrates everything from Sessions 1 to 4 into a single operational intelligence view. Rather than looking at rainfall, vegetation, soil moisture, and phenology in isolation, the case study overlays all four data layers to reveal how they interact and what they collectively say about crop health and food security risk in the study area.</p>
+
+        <!-- INTELLIGENCE DASHBOARD -->
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--tm);margin-bottom:1rem;display:flex;align-items:center;gap:6px;"><span style="width:12px;height:1px;background:var(--g400);display:inline-block;"></span>Integrated intelligence output</div>
+
+        <div class="intel-dashboard">
+          <div class="intel-card">
+            <div class="intel-card-header">
+              <span class="intel-card-title">Rainfall Intelligence</span>
+              <span class="status-pill sp-red">Critical</span>
+            </div>
+            <div class="intel-card-body">
+              <div class="intel-metric"><span class="intel-metric-label">Monthly Anomaly</span><span class="intel-metric-value mv-r">38% below normal</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">Standardised Anomaly</span><span class="intel-metric-value mv-r">minus 1.8 SD</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">Consecutive Dry Months</span><span class="intel-metric-value mv-o">3 months</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">Spatial Distribution</span><span class="intel-metric-value mv-o">Widespread deficit</span></div>
+            </div>
+          </div>
+
+          <div class="intel-card">
+            <div class="intel-card-header">
+              <span class="intel-card-title">Vegetation Intelligence</span>
+              <span class="status-pill sp-orange">Alert</span>
+            </div>
+            <div class="intel-card-body">
+              <div class="intel-metric"><span class="intel-metric-label">NDVI Anomaly (Zonal)</span><span class="intel-metric-value mv-o">minus 0.12 vs baseline</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">Crop Mask Coverage</span><span class="intel-metric-value mv-g">Agricultural pixels</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">Stress Extent</span><span class="intel-metric-value mv-o">62% of farmland</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">NDVI Trend</span><span class="intel-metric-value mv-r">Declining 4 weeks</span></div>
+            </div>
+          </div>
+
+          <div class="intel-card">
+            <div class="intel-card-header">
+              <span class="intel-card-title">Soil Moisture Intelligence</span>
+              <span class="status-pill sp-yellow">Watch</span>
+            </div>
+            <div class="intel-card-body">
+              <div class="intel-metric"><span class="intel-metric-label">Surface Wetness</span><span class="intel-metric-value mv-y">Below average</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">Root Zone Wetness</span><span class="intel-metric-value mv-o">Moderate deficit</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">vs ERA5 Rainfall</span><span class="intel-metric-value mv-y">Consistent with dry signal</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">Irrigation Need</span><span class="intel-metric-value mv-o">Elevated</span></div>
+            </div>
+          </div>
+
+          <div class="intel-card">
+            <div class="intel-card-header">
+              <span class="intel-card-title">Phenology Intelligence</span>
+              <span class="status-pill sp-green">Normal</span>
+            </div>
+            <div class="intel-card-body">
+              <div class="intel-metric"><span class="intel-metric-label">Current Stage</span><span class="intel-metric-value mv-g">Vegetative growth</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">Start of Season</span><span class="intel-metric-value mv-g">On schedule</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">Peak NDVI Forecast</span><span class="intel-metric-value mv-y">Likely suppressed</span></div>
+              <div class="intel-metric"><span class="intel-metric-label">Harvest Risk</span><span class="intel-metric-value mv-o">Moderate if dry spell continues</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ANOMALY SCALE -->
+        <div class="anomaly-scale">
+          <div class="as-label">Standardised anomaly scale used across all layers</div>
+          <div class="as-bar">
+            <div class="as-seg" style="background:#a62626;"></div>
+            <div class="as-seg" style="background:#c93535;"></div>
+            <div class="as-seg" style="background:#e05555;"></div>
+            <div class="as-seg" style="background:#f07c1a;"></div>
+            <div class="as-seg" style="background:#f5cc47;"></div>
+            <div class="as-seg" style="background:#52b052;"></div>
+            <div class="as-seg" style="background:#7acc7a;"></div>
+            <div class="as-seg" style="background:#a8e0a8;"></div>
+          </div>
+          <div class="as-ticks">
+            <span>minus 3 SD</span><span>minus 2 SD</span><span>minus 1 SD</span><span>0</span><span>plus 1 SD</span><span>plus 2 SD</span><span>plus 3 SD</span>
+          </div>
+          <div class="as-legend">
+            <div class="as-legend-item"><span class="as-legend-dot" style="background:var(--r500)"></span>Severe deficit (Critical)</div>
+            <div class="as-legend-item"><span class="as-legend-dot" style="background:var(--o400)"></span>Moderate deficit (Alert)</div>
+            <div class="as-legend-item"><span class="as-legend-dot" style="background:var(--y300)"></span>Slight deficit (Watch)</div>
+            <div class="as-legend-item"><span class="as-legend-dot" style="background:var(--g400)"></span>Near normal</div>
+            <div class="as-legend-item"><span class="as-legend-dot" style="background:var(--g200)"></span>Above normal</div>
+          </div>
+        </div>
+
+        <!-- INTEGRATED VIEW -->
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--tm);margin-bottom:1rem;display:flex;align-items:center;gap:6px;"><span style="width:12px;height:1px;background:var(--g400);display:inline-block;"></span>Integrated multi-layer view</div>
+        <div class="integrated-grid">
+          <div class="int-card">
+            <div class="int-card-icon">🌧️</div>
+            <div class="int-card-label">Mean Monthly Rainfall</div>
+            <div class="int-card-value" style="color:var(--r400);">142 mm</div>
+            <div class="int-card-note">vs 230mm long-term average. Significant shortfall entering peak growing season.</div>
+          </div>
+          <div class="int-card">
+            <div class="int-card-icon">🌿</div>
+            <div class="int-card-label">Mean Monthly NDVI</div>
+            <div class="int-card-value" style="color:var(--o300);">0.54</div>
+            <div class="int-card-note">vs 0.66 climatology baseline. Vegetation responding to reduced water availability.</div>
+          </div>
+          <div class="int-card">
+            <div class="int-card-icon">🌱</div>
+            <div class="int-card-label">Mean Soil Moisture</div>
+            <div class="int-card-value" style="color:var(--y300);">0.21 m³/m³</div>
+            <div class="int-card-note">Surface layer below seasonal average. Root zone approaching stress threshold.</div>
+          </div>
+          <div class="int-card">
+            <div class="int-card-icon">📅</div>
+            <div class="int-card-label">Season Length</div>
+            <div class="int-card-value" style="color:var(--g400);">On track</div>
+            <div class="int-card-note">Phenology start normal but peak NDVI likely reduced if current conditions persist.</div>
+          </div>
+          <div class="int-card">
+            <div class="int-card-icon">⚠️</div>
+            <div class="int-card-label">Food Security Risk</div>
+            <div class="int-card-value" style="color:var(--o300);">Elevated</div>
+            <div class="int-card-note">Combined rainfall and NDVI deficit signal potential yield reduction of 15 to 25%.</div>
+          </div>
+          <div class="int-card">
+            <div class="int-card-icon">🛰️</div>
+            <div class="int-card-label">Intelligence Lead Time</div>
+            <div class="int-card-value" style="color:var(--g400);">4 to 6 weeks</div>
+            <div class="int-card-note">Satellite signal detects stress this many weeks ahead of field-based confirmation.</div>
+          </div>
+        </div>
+
+        <div class="steps-list" style="margin-top:2rem;">
+          <div class="step-item"><span class="step-num">01</span><span class="step-text"><strong>Load and display previously generated results.</strong> Rainfall anomaly statistics, NDVI monthly means, and soil moisture time series from Sessions 1 to 3 are loaded and reviewed together for the first time in an integrated view.</span></div>
+          <div class="step-item"><span class="step-num">02</span><span class="step-text"><strong>Compare standardised anomalies across layers.</strong> Plotting rainfall and NDVI standardised anomalies on the same axis reveals whether vegetation stress is tracking the rainfall deficit, which confirms the causal relationship and rules out other explanations like pest damage or disease.</span></div>
+          <div class="step-item"><span class="step-num">03</span><span class="step-text"><strong>Overlay mean monthly NDVI, soil moisture, and total rainfall.</strong> This integrated multi-layer plot is the core of the intelligence output. It shows how the three variables move together through the season and identifies the months or periods where all three deteriorate simultaneously, representing the highest risk windows.</span></div>
+          <div class="step-item"><span class="step-num">04</span><span class="step-text"><strong>Phenology statistics complete the picture.</strong> Adding the zonal and per-pixel phenology outputs from Session 4 reveals whether the seasonal cycle itself is shifting. A drought that delays or suppresses the peak growing period has compounding effects on final yield that simple NDVI values alone would not capture.</span></div>
+          <div class="step-item"><span class="step-num">05</span><span class="step-text"><strong>Identify areas needing intervention.</strong> The combined view flags specific farm areas or zones where multiple indicators are simultaneously below normal. These become priority zones for agricultural extension services, emergency irrigation, or food security programme targeting.</span></div>
+        </div>
+
+        <div class="source-chips">
+          <span class="chip">CHIRPS Rainfall</span><span class="chip">DEA NDVI</span><span class="chip">SMAP Soil Moisture</span><span class="chip">ERA5</span><span class="chip">xr_phenology</span><span class="chip">hdstats</span><span class="chip">Bar Tin Tin Nigeria</span>
+        </div>
+
+        <div class="takeaway">
+          <span class="takeaway-icon">🛰️</span>
+          <div class="takeaway-body">
+            <div class="takeaway-title">Why This Matters for South Africa</div>
+            <div class="takeaway-text">The methodology demonstrated in Bar Tin Tin applies directly to the Western Cape. The same pipeline used here can be run for the Breede River Valley, the Hex River, or the Swartland wheat belt. A South African case study using this exact framework is in development. The satellite data is already available. The analysis is replicable. The intelligence is actionable.</div>
+          </div>
+        </div>
+
+      </div>
+      <!-- end session 5 -->
+
+    </main>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">SCS <span>Space</span></div>
+      <div class="footer-copy" style="margin-top:4px;">Satellite Intelligence for Africa. Built in Cape Town.</div>
+    </div>
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+      <a href="index.html" style="font-size:12px;color:var(--tm);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--g300)'" onmouseout="this.style.color='var(--tm)'">Home</a>
+      <a href="#" style="font-size:12px;color:var(--tm);text-decoration:none;">Datasets</a>
+      <a href="#" style="font-size:12px;color:var(--tm);text-decoration:none;">About</a>
+      <a href="#" style="font-size:12px;color:var(--g300);text-decoration:none;">Request Briefing</a>
+    </div>
+    <div class="footer-copy">Powered by <a href="https://www.digitalearthafrica.org" target="_blank">Digital Earth Africa</a></div>
+  </div>
+</footer>
+
+
+<script>
+// Fade-in on scroll
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+// Mobile nav
+const toggle = document.getElementById('navToggle');
+const mobileNav = document.getElementById('navMobile');
+toggle.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('open');
+  const spans = toggle.querySelectorAll('span');
+  if (open) {
+    spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+  } else {
+    spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+  }
+});
+mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileNav.classList.remove('open');
+  toggle.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+}));
+
+// Sidebar active state on scroll
+const sessions = ['session1','session2','session3','session4','session5'];
+const sidebarLinks = document.querySelectorAll('.sidebar-link');
+const sessionPills = document.querySelectorAll('.session-pill');
+
+const scrollSpy = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      const idx = sessions.indexOf(id);
+      sidebarLinks.forEach((l,i) => l.classList.toggle('active', i === idx));
+      sessionPills.forEach((p,i) => p.classList.toggle('active', i === idx));
+    }
+  });
+}, { threshold: 0.3 });
+
+sessions.forEach(id => {
+  const el = document.getElementById(id);
+  if (el) scrollSpy.observe(el);
+});
+</script>
+</body>
+</html>

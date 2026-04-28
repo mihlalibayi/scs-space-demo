@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCS Space | Satellite Intelligence for Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <svg width="32" height="32" viewBox="0 0 34 34" fill="none">
+      <circle cx="17" cy="17" r="15.5" stroke="#52b052" stroke-width="1.2"/>
+      <circle cx="17" cy="17" r="3" fill="#52b052"/>
+      <line x1="1.5" y1="17" x2="32.5" y2="17" stroke="#52b052" stroke-width="0.8" stroke-dasharray="2.5 2"/>
+      <ellipse cx="17" cy="17" rx="15.5" ry="7" stroke="#52b052" stroke-width="0.6" stroke-dasharray="2 2"/>
+      <rect x="7" y="5" width="4" height="7" rx="1" fill="#52b052" opacity="0.8"/>
+      <rect x="23" y="5" width="4" height="7" rx="1" fill="#52b052" opacity="0.8"/>
+      <line x1="7" y1="8.5" x2="27" y2="8.5" stroke="#52b052" stroke-width="1.2"/>
+      <rect x="14.5" y="5.5" width="5" height="6" rx="1" fill="#52b052"/>
+    </svg>
+    <span class="nav-logo-text">SCS <span>Space</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">Intelligence</a></li>
+    <li><a href="agriculture.html">Agriculture</a></li>
+    <li><a href="#">Datasets</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#" class="nav-cta">Request Briefing</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="nav-mobile" id="navMobile">
+  <a href="#">Intelligence</a>
+  <a href="agriculture.html">Agriculture</a>
+  <a href="#">Datasets</a>
+  <a href="#">About</a>
+  <a href="#">Request Briefing</a>
+</div>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+
+  <svg class="hero-visual" width="500" height="500" viewBox="0 0 500 500" fill="none">
+    <circle cx="250" cy="250" r="220" stroke="#52b052" stroke-width="0.8"/>
+    <circle cx="250" cy="250" r="165" stroke="#52b052" stroke-width="0.5" stroke-dasharray="4 3"/>
+    <circle cx="250" cy="250" r="105" stroke="#52b052" stroke-width="0.5" stroke-dasharray="2 3"/>
+    <circle cx="250" cy="250" r="9" fill="#52b052"/>
+    <circle cx="418" cy="158" r="15" stroke="#f5cc47" stroke-width="1.2"/>
+    <line x1="400" y1="158" x2="372" y2="158" stroke="#f5cc47" stroke-width="1.2"/>
+    <line x1="436" y1="158" x2="464" y2="158" stroke="#f5cc47" stroke-width="1.2"/>
+    <rect x="403" y="151" width="30" height="14" rx="2" stroke="#f5cc47" stroke-width="0.8" fill="none"/>
+    <circle cx="78" cy="332" r="13" stroke="#f07c1a" stroke-width="1.2"/>
+    <line x1="61" y1="332" x2="33" y2="332" stroke="#f07c1a" stroke-width="1.2"/>
+    <line x1="95" y1="332" x2="123" y2="332" stroke="#f07c1a" stroke-width="1.2"/>
+    <rect x="65" y="325" width="26" height="14" rx="2" stroke="#f07c1a" stroke-width="0.8" fill="none"/>
+    <line x1="408" y1="166" x2="258" y2="252" stroke="#f5cc47" stroke-width="0.5" opacity="0.4" stroke-dasharray="3 3"/>
+    <line x1="78" y1="322" x2="248" y2="254" stroke="#f07c1a" stroke-width="0.5" opacity="0.4" stroke-dasharray="3 3"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Satellite Intelligence for Africa</div>
+    <h1 class="hero-title">
+      <span class="accent">See Africa</span><br>from above.
+      <span class="sub">Real-time satellite data. Actionable intelligence.<br>Powering decisions across the continent.</span>
+    </h1>
+    <p class="hero-desc">SCS Space transforms raw satellite imagery and geospatial datasets into operational intelligence for agriculture, environment, urban planning, and beyond.</p>
+    <div class="hero-actions">
+      <a href="agriculture.html" class="btn-primary">
+        Explore Agriculture Intelligence
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1 6.5h11M7.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#services" class="btn-secondary">
+        View All Services
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 1v11M2.5 8.5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="hero-stat-num">54</div><div class="hero-stat-label">Countries Covered</div></div>
+      <div><div class="hero-stat-num">6+</div><div class="hero-stat-label">Satellite Datasets</div></div>
+      <div><div class="hero-stat-num">Daily</div><div class="hero-stat-label">Data Refresh</div></div>
+      <div><div class="hero-stat-num">DEA</div><div class="hero-stat-label">Powered</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TICKER -->
+<div class="ticker-strip">
+  <div class="ticker-inner">
+    <span>Sentinel-2 Optical Imagery</span><span>CHIRPS Rainfall Data</span><span>Landsat 8/9 Surface Reflectance</span><span>MODIS Vegetation Index</span><span>Soil Moisture Active Passive</span><span>Digital Earth Africa</span><span>Sentinel-1 SAR</span><span>ERA5 Climate Reanalysis</span><span>Copernicus Land Service</span>
+    <span>Sentinel-2 Optical Imagery</span><span>CHIRPS Rainfall Data</span><span>Landsat 8/9 Surface Reflectance</span><span>MODIS Vegetation Index</span><span>Soil Moisture Active Passive</span><span>Digital Earth Africa</span><span>Sentinel-1 SAR</span><span>ERA5 Climate Reanalysis</span><span>Copernicus Land Service</span>
+  </div>
+</div>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="fade-in">
+        <div class="section-tag">Who We Are</div>
+        <h2 class="section-heading">Africa-first satellite intelligence</h2>
+        <p class="about-body">SCS Space is a geospatial intelligence company built for Africa, not adapted from elsewhere. We combine open satellite data from programmes like Digital Earth Africa, ESA Copernicus, and NASA Earthdata with analytical rigour to produce intelligence that matters on the ground.</p>
+        <p class="about-body">Based in Cape Town, South Africa, we serve governments, NGOs, agricultural operators, and researchers who need to understand what is happening across the continent, from soil moisture in the Sahel to crop stress in the Great Rift Valley.</p>
+        <p class="about-body">Our intelligence layers are built on validated methodologies from leading Earth observation programmes, with more datasets and modules coming online regularly.</p>
+        <div class="about-pills">
+          <span class="about-pill pill-g">Agriculture</span>
+          <span class="about-pill pill-g">Food Security</span>
+          <span class="about-pill pill-y">Climate Monitoring</span>
+          <span class="about-pill pill-y">Rainfall Analysis</span>
+          <span class="about-pill pill-o">Land Use Change</span>
+          <span class="about-pill pill-o">Urban Growth</span>
+          <span class="about-pill pill-r">Disaster Response</span>
+          <span class="about-pill pill-r">Flood Mapping</span>
+        </div>
+      </div>
+      <div class="fade-in d2">
+        <svg viewBox="0 0 320 390" width="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="ga" cx="50%" cy="48%" r="50%">
+              <stop offset="0%" stop-color="#3d8b3d" stop-opacity="0.28"/>
+              <stop offset="100%" stop-color="#3d8b3d" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <path d="M104,18 L218,18 L250,52 L268,92 L272,132 L268,162 L278,202 L268,244 L238,282 L198,332 L160,362 L128,342 L96,302 L68,260 L50,222 L42,182 L47,142 L52,102 L62,62 Z" fill="url(#ga)" stroke="#2d6b2d" stroke-width="1.4"/>
+          <line x1="42" y1="122" x2="278" y2="122" stroke="#1a3d1a" stroke-width="0.8" stroke-dasharray="3 4"/>
+          <line x1="42" y1="182" x2="278" y2="182" stroke="#1a3d1a" stroke-width="0.8" stroke-dasharray="3 4"/>
+          <line x1="42" y1="242" x2="278" y2="242" stroke="#1a3d1a" stroke-width="0.8" stroke-dasharray="3 4"/>
+          <line x1="104" y1="18" x2="138" y2="362" stroke="#1a3d1a" stroke-width="0.8" stroke-dasharray="3 4"/>
+          <line x1="160" y1="18" x2="160" y2="365" stroke="#1a3d1a" stroke-width="0.8" stroke-dasharray="3 4"/>
+          <line x1="218" y1="18" x2="186" y2="342" stroke="#1a3d1a" stroke-width="0.8" stroke-dasharray="3 4"/>
+          <circle cx="163" cy="196" r="7" fill="#52b052" opacity="0.9"/>
+          <circle cx="163" cy="196" r="14" fill="#52b052" opacity="0.18"/>
+          <text x="176" y="200" font-size="9" fill="#7acc7a" font-family="DM Sans,sans-serif" font-weight="500">Nigeria</text>
+          <circle cx="216" cy="222" r="5.5" fill="#e8b825" opacity="0.9"/>
+          <circle cx="216" cy="222" r="11" fill="#e8b825" opacity="0.18"/>
+          <text x="226" y="226" font-size="9" fill="#f9e08a" font-family="DM Sans,sans-serif" font-weight="500">Kenya</text>
+          <circle cx="218" cy="184" r="5" fill="#f07c1a" opacity="0.9"/>
+          <circle cx="218" cy="184" r="10" fill="#f07c1a" opacity="0.18"/>
+          <text x="228" y="188" font-size="9" fill="#f9c28a" font-family="DM Sans,sans-serif" font-weight="500">Ethiopia</text>
+          <circle cx="158" cy="316" r="8" fill="#52b052" opacity="0.9"/>
+          <circle cx="158" cy="316" r="16" fill="#52b052" opacity="0.22"/>
+          <text x="170" y="320" font-size="9" fill="#7acc7a" font-family="DM Sans,sans-serif" font-weight="500">South Africa</text>
+          <circle cx="126" cy="202" r="4.5" fill="#e05555" opacity="0.9"/>
+          <circle cx="126" cy="202" r="9" fill="#e05555" opacity="0.18"/>
+          <text x="100" y="196" font-size="9" fill="#ee8888" font-family="DM Sans,sans-serif" font-weight="500">Ghana</text>
+          <rect x="90" y="127" width="145" height="3" rx="1.5" fill="#1a3d1a"/>
+          <rect x="90" y="127" width="72" height="3" rx="1.5" fill="#52b052" opacity="0.75"/>
+          <text x="90" y="121" font-size="8" fill="#52b052" font-family="DM Sans,sans-serif" opacity="0.65">Sahel monitoring zone</text>
+          <ellipse cx="160" cy="190" rx="128" ry="48" stroke="#52b052" stroke-width="0.7" fill="none" stroke-dasharray="4 3" opacity="0.35" transform="rotate(-22 160 190)"/>
+          <circle cx="50" cy="352" r="4" fill="#52b052"/>
+          <text x="58" y="356" font-size="8" fill="#7acc7a" font-family="DM Sans,sans-serif">Active coverage</text>
+          <circle cx="50" cy="368" r="4" fill="#e8b825"/>
+          <text x="58" y="372" font-size="8" fill="#f9e08a" font-family="DM Sans,sans-serif">Monitoring active</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <div class="fade-in">
+      <div class="section-tag">Intelligence Modules</div>
+      <h2 class="section-heading">What we monitor</h2>
+      <p class="section-subheading">Operational intelligence derived from multiple satellite sources, built for decision makers across Africa.</p>
+    </div>
+    <div class="services-grid fade-in">
+
+      <div class="svc cg">
+        <div class="svc-icon ig">🌾</div>
+        <h3 class="svc-name">Agriculture and Food Security</h3>
+        <p class="svc-desc">Rainfall anomalies, vegetation stress, soil moisture, crop phenology, and case studies in crop health powered by Digital Earth Africa (DEA202).</p>
+        <a href="agriculture.html" class="svc-link lg">View Intelligence Report <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M1 5.5h9M6 2l3.5 3.5L6 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="svc cy">
+        <div class="svc-icon iy">🌧️</div>
+        <h3 class="svc-name">Climate and Rainfall</h3>
+        <p class="svc-desc">Long term climate trend analysis, seasonal rainfall forecasting, and drought early warning using CHIRPS and ERA5 datasets.</p>
+        <span class="coming-badge">Coming Soon</span>
+      </div>
+
+      <div class="svc co">
+        <div class="svc-icon io">🏙️</div>
+        <h3 class="svc-name">Urban and Land Use Change</h3>
+        <p class="svc-desc">Tracking urban expansion, informal settlement growth, deforestation, and land cover transitions across African cities and regions.</p>
+        <span class="coming-badge">Coming Soon</span>
+      </div>
+
+      <div class="svc cr">
+        <div class="svc-icon ir">🌊</div>
+        <h3 class="svc-name">Flood and Disaster Response</h3>
+        <p class="svc-desc">Near real time flood extent mapping using SAR imagery, inundation modelling, and rapid damage assessment for emergency response.</p>
+        <span class="coming-badge">Coming Soon</span>
+      </div>
+
+      <div class="svc ct">
+        <div class="svc-icon it">🌿</div>
+        <h3 class="svc-name">Forest and Ecosystem Health</h3>
+        <p class="svc-desc">Forest cover change, biomass estimation, bush encroachment monitoring, and ecosystem degradation indices across Africa's biomes.</p>
+        <span class="coming-badge">Coming Soon</span>
+      </div>
+
+      <div class="svc cb">
+        <div class="svc-icon ib">💧</div>
+        <h3 class="svc-name">Water Resources</h3>
+        <p class="svc-desc">Reservoir levels, surface water dynamics, transboundary river monitoring, and groundwater recharge indicators from optical and SAR sensors.</p>
+        <span class="coming-badge">Coming Soon</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- DATA SOURCES -->
+<div class="data-strip">
+  <div class="data-strip-inner">
+    <div class="fade-in">
+      <div class="ds-label">Satellite Sources</div>
+      <h3 class="ds-heading">Multi-source, validated data</h3>
+      <p class="ds-body">We integrate data from leading global satellite programmes, all validated through the Digital Earth Africa platform and international Earth observation standards. More sources are coming online as we expand our intelligence modules.</p>
+    </div>
+    <div class="ds-list fade-in d2">
+      <div class="ds-item"><span class="dot dot-a"></span>Digital Earth Africa (Open Data Cube)</div>
+      <div class="ds-item"><span class="dot dot-a"></span>ESA Sentinel-2 Optical Imagery</div>
+      <div class="ds-item"><span class="dot dot-a"></span>CHIRPS Rainfall Estimates</div>
+      <div class="ds-item"><span class="dot dot-a"></span>MODIS Vegetation Indices</div>
+      <div class="ds-item"><span class="dot dot-a"></span>NASA SMAP Soil Moisture</div>
+      <div class="ds-item"><span class="dot dot-a"></span>Landsat 8/9 Surface Reflectance</div>
+      <div class="ds-item"><span class="dot dot-s"></span>Sentinel-1 SAR (Coming Soon)</div>
+      <div class="ds-item"><span class="dot dot-s"></span>ERA5 Climate Reanalysis (Coming Soon)</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- INTEL PREVIEW -->
+<section class="intel-promo">
+  <div class="section-inner">
+    <div class="section-tag">Live Intelligence Preview</div>
+    <h2 class="section-heading fade-in">What an intelligence report looks like</h2>
+    <p class="section-subheading fade-in">Our reports synthesise multiple satellite variables into a single, readable operational brief showing anomalies, trends, and actionable insights.</p>
+    <div class="intel-grid">
+      <div class="fade-in">
+        <div class="intel-card">
+          <div class="intel-card-header">
+            <span class="intel-card-title">Agriculture Intelligence | Nigeria (Bar Tin Tin)</span>
+            <span class="status-live">Live</span>
+          </div>
+          <div class="intel-card-body">
+            <div class="intel-row"><span class="intel-row-label">Rainfall Anomaly (Apr 2025)</span><span class="intel-row-value vr">38% below normal</span></div>
+            <div class="intel-row"><span class="intel-row-label">NDVI Vegetation Status</span><span class="intel-row-value vo">Moderate Stress</span></div>
+            <div class="intel-row"><span class="intel-row-label">Soil Moisture (Top 5cm)</span><span class="intel-row-value vy">Below Average</span></div>
+            <div class="intel-row"><span class="intel-row-label">Crop Phenology Stage</span><span class="intel-row-value vg">Vegetative Growth</span></div>
+            <div class="intel-row"><span class="intel-row-label">Overall Food Security Risk</span><span class="intel-row-value vo">Elevated</span></div>
+          </div>
+        </div>
+        <div class="legend-row">
+          <div class="legend-item"><span class="legend-dot" style="background:var(--g400)"></span>Normal</div>
+          <div class="legend-item"><span class="legend-dot" style="background:var(--y300)"></span>Watch</div>
+          <div class="legend-item"><span class="legend-dot" style="background:var(--o400)"></span>Alert</div>
+          <div class="legend-item"><span class="legend-dot" style="background:var(--r400)"></span>Critical</div>
+        </div>
+      </div>
+      <div class="fade-in d2">
+        <div class="section-tag" style="margin-bottom:1rem;">Why this matters</div>
+        <p style="font-size:15px;font-weight:300;color:var(--ts);line-height:1.85;margin-bottom:1.2rem;">A 38% rainfall deficit combined with moderate vegetation stress is an early signal of potential crop yield shortfalls, often invisible to on-the-ground observers until it is too late.</p>
+        <p style="font-size:15px;font-weight:300;color:var(--ts);line-height:1.85;margin-bottom:1.2rem;">SCS Space delivers this intelligence weeks before field reports arrive, enabling governments, NGOs, and agricultural lenders to act early, not after the fact.</p>
+        <p style="font-size:15px;font-weight:300;color:var(--ts);line-height:1.85;margin-bottom:2rem;">Every metric is derived from validated satellite datasets at spatial scales from national to farm level.</p>
+        <a href="agriculture.html" class="btn-primary">Read Full Agriculture Intelligence <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1 6.5h11M7.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- COVERAGE -->
+<section class="coverage" id="coverage">
+  <div class="section-inner">
+    <div class="section-tag" style="justify-content:center;">Coverage</div>
+    <h2 class="section-heading fade-in">Pan-African coverage</h2>
+    <p class="section-subheading fade-in" style="margin:0 auto 3.5rem;">Intelligence available across all African regions, from the Sahel to Southern Africa, from the Horn to the Atlantic coast.</p>
+    <div class="region-grid fade-in">
+      <div class="region-card"><span class="region-flag">🌍</span><div class="region-name">West Africa</div><div class="region-status">Active</div></div>
+      <div class="region-card"><span class="region-flag">🌍</span><div class="region-name">East Africa</div><div class="region-status">Active</div></div>
+      <div class="region-card"><span class="region-flag">🌍</span><div class="region-name">Southern Africa</div><div class="region-status">Active</div></div>
+      <div class="region-card"><span class="region-flag">🌍</span><div class="region-name">Central Africa</div><div class="region-status">Active</div></div>
+      <div class="region-card"><span class="region-flag">🌍</span><div class="region-name">North Africa</div><div class="region-status">Active</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="section-tag" style="justify-content:center;position:relative;">Get Started</div>
+  <h2 class="section-heading" style="position:relative;">Ready for satellite intelligence?</h2>
+  <p class="section-subheading" style="margin:0 auto 2.5rem;position:relative;">Explore our Agriculture and Food Security report, the first of many intelligence modules built for African decision makers.</p>
+  <div class="cta-actions">
+    <a href="agriculture.html" class="btn-primary" style="background:var(--g900);color:var(--g200);">View Agriculture Intelligence</a>
+    <a href="#" class="btn-secondary" style="border-color:rgba(168,224,168,0.4);color:var(--g100);">Request a Briefing</a>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">SCS <span>Space</span></div>
+        <p class="footer-tagline">Satellite intelligence for Africa, from Cape Town to Cairo, Lagos to Nairobi.</p>
+        <span class="footer-badge">Cape Town, South Africa</span>
+      </div>
+      <div>
+        <div class="footer-col-title">Intelligence</div>
+        <ul class="footer-links">
+          <li><a href="agriculture.html">Agriculture and Food Security</a></li>
+          <li><a href="#">Climate and Rainfall</a></li>
+          <li><a href="#">Flood and Disaster</a></li>
+          <li><a href="#">Urban and Land Use</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Data Sources</div>
+        <ul class="footer-links">
+          <li><a href="#">Digital Earth Africa</a></li>
+          <li><a href="#">ESA Copernicus</a></li>
+          <li><a href="#">NASA Earthdata</a></li>
+          <li><a href="#">CHIRPS and USGS</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="#">About SCS Space</a></li>
+          <li><a href="#">Methodology</a></li>
+          <li><a href="#">Request Briefing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">2025 SCS Space. Built in Cape Town. Satellite Intelligence for Africa.</p>
+      <p class="footer-copy">Powered by <a href="https://www.digitalearthafrica.org" target="_blank">Digital Earth Africa</a> and Open Satellite Data</p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+// Scroll fade-in
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+// Mobile nav toggle
+const toggle = document.getElementById('navToggle');
+const mobileNav = document.getElementById('navMobile');
+toggle.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', open);
+  const spans = toggle.querySelectorAll('span');
+  if (open) {
+    spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+  } else {
+    spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+  }
+});
+// Close mobile nav on link click
+mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileNav.classList.remove('open');
+  toggle.setAttribute('aria-expanded', false);
+  toggle.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+}));
+</script>
+</body>
+</html>
